@@ -1,0 +1,34 @@
+
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wlgzs_user?useUnicode=true&useSSL=false
+    username: root
+    password: root
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    encoding: utf-8
+    servlet:
+      content-type: text/html
+    cache: false
+
+  http:
+    encoding:
+      charset: utf-8
+      enabled: true
+
+  #热部署
+  devtools:
+    restart:
+      enabled: true
+
+
+logging:
+  config: classpath:logback-spring.xml
+

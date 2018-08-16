@@ -1,0 +1,1075 @@
+2018-08-12 08:42:38.431 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Starting OrgApplication on DESKTOP-PB3M6A6 with PID 2984 (E:\workspace\wlgzs-tbUser\target\classes started by zjg in E:\workspace\wlgzs-tbUser)
+2018-08-12 08:42:38.432 [restartedMain] INFO  org.wlgzs.website.OrgApplication - The following profiles are active: dev
+2018-08-12 08:42:38.621 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f4ef3a7: startup date [Sun Aug 12 08:42:38 CST 2018]; root of context hierarchy
+2018-08-12 08:42:39.951 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.wlgzs.website]' package. Please check your configuration.
+2018-08-12 08:42:41.319 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-08-12 08:42:41.339 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-12 08:42:41.355 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-08-12 08:42:41.355 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-12 08:42:41.362 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\environment\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\environment\Git\cmd;E:\environment\jdk\bin;E:\ideaIU-2017.3.5.win\plugins\maven\lib\maven3\bin;E:\environment\node\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;%mariadb%\bin;E:\environment\node\node_global;C:\Users\zjg\AppData\Local\Microsoft\WindowsApps;C:\Users\zjg\AppData\Roaming\npm;;.]
+2018-08-12 08:42:41.521 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-08-12 08:42:41.522 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2901 ms
+2018-08-12 08:42:41.661 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-08-12 08:42:41.667 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-12 08:42:41.668 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-12 08:42:41.669 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-12 08:42:41.670 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-12 08:42:41.893 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 08:42:42.158 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f4ef3a7: startup date [Sun Aug 12 08:42:38 CST 2018]; root of context hierarchy
+2018-08-12 08:42:42.241 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addcookie],methods=[GET]}" onto public void org.wlgzs.website.controller.LoginController.addCookies(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:42:42.243 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ssocheck],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.checkCookies(javax.servlet.http.HttpServletRequest)
+2018-08-12 08:42:42.245 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.doLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:42:42.254 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/authcookies],methods=[GET]}" onto public org.wlgzs.website.util.Result.Result org.wlgzs.website.controller.SsoCheck.checkAuthCookies(java.lang.String,java.lang.String)
+2018-08-12 08:42:42.256 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/login],methods=[GET]}" onto public boolean org.wlgzs.website.controller.SsoCheck.checkLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:42:42.260 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-12 08:42:42.261 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:42:42.300 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 08:42:42.301 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 08:42:42.379 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-08-12 08:42:42.469 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-08-12 08:42:43.133 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-12 08:42:43.185 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-12 08:42:43.187 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-12 08:42:43.196 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-12 08:42:43.218 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-12 08:42:43.243 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-08-12 08:42:43.279 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-12 08:42:43.285 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Started OrgApplication in 6.25 seconds (JVM running for 9.098)
+2018-08-12 08:42:54.691 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-12 08:42:54.692 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-12 08:42:54.742 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 50 ms
+2018-08-12 08:43:49.501 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Starting OrgApplication on DESKTOP-PB3M6A6 with PID 14668 (E:\workspace\wlgzs-tbUser\target\classes started by zjg in E:\workspace\wlgzs-tbUser)
+2018-08-12 08:43:49.502 [restartedMain] INFO  org.wlgzs.website.OrgApplication - The following profiles are active: dev
+2018-08-12 08:43:49.630 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2719c3ee: startup date [Sun Aug 12 08:43:49 CST 2018]; root of context hierarchy
+2018-08-12 08:43:51.185 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.wlgzs.website]' package. Please check your configuration.
+2018-08-12 08:43:52.593 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-08-12 08:43:52.621 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-12 08:43:52.638 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-08-12 08:43:52.639 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-12 08:43:52.647 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\environment\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\environment\Git\cmd;E:\environment\jdk\bin;E:\ideaIU-2017.3.5.win\plugins\maven\lib\maven3\bin;E:\environment\node\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;%mariadb%\bin;E:\environment\node\node_global;C:\Users\zjg\AppData\Local\Microsoft\WindowsApps;C:\Users\zjg\AppData\Roaming\npm;;.]
+2018-08-12 08:43:52.817 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-08-12 08:43:52.818 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3188 ms
+2018-08-12 08:43:52.978 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-08-12 08:43:52.985 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-12 08:43:52.985 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-12 08:43:52.986 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-12 08:43:52.986 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-12 08:43:53.260 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 08:43:53.696 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2719c3ee: startup date [Sun Aug 12 08:43:49 CST 2018]; root of context hierarchy
+2018-08-12 08:43:53.802 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.doLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:43:53.803 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addcookie],methods=[GET]}" onto public void org.wlgzs.website.controller.LoginController.addCookies(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:43:53.804 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ssocheck],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.checkCookies(javax.servlet.http.HttpServletRequest)
+2018-08-12 08:43:53.806 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/authcookies],methods=[GET]}" onto public org.wlgzs.website.util.Result.Result org.wlgzs.website.controller.SsoCheck.checkAuthCookies(java.lang.String,java.lang.String)
+2018-08-12 08:43:53.807 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/login],methods=[GET]}" onto public boolean org.wlgzs.website.controller.SsoCheck.checkLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:43:53.811 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-12 08:43:53.813 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:43:53.848 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 08:43:53.848 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 08:43:53.950 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-08-12 08:43:54.039 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-08-12 08:43:54.782 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-12 08:43:54.846 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-12 08:43:54.848 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-12 08:43:54.856 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-12 08:43:54.874 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-12 08:43:54.898 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-08-12 08:43:54.945 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-12 08:43:54.952 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Started OrgApplication in 7.095 seconds (JVM running for 9.124)
+2018-08-12 08:44:02.182 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-12 08:44:02.183 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-12 08:44:02.212 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-08-12 08:44:02.278 [http-nio-8080-exec-2] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 08:44:34.149 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Starting OrgApplication on DESKTOP-PB3M6A6 with PID 16980 (E:\workspace\wlgzs-tbUser\target\classes started by zjg in E:\workspace\wlgzs-tbUser)
+2018-08-12 08:44:34.153 [restartedMain] INFO  org.wlgzs.website.OrgApplication - The following profiles are active: dev
+2018-08-12 08:44:34.339 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@17877bdc: startup date [Sun Aug 12 08:44:34 CST 2018]; root of context hierarchy
+2018-08-12 08:44:35.413 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.wlgzs.website]' package. Please check your configuration.
+2018-08-12 08:44:36.974 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-08-12 08:44:37.005 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-12 08:44:37.020 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-08-12 08:44:37.020 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-12 08:44:37.026 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\environment\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\environment\Git\cmd;E:\environment\jdk\bin;E:\ideaIU-2017.3.5.win\plugins\maven\lib\maven3\bin;E:\environment\node\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;%mariadb%\bin;E:\environment\node\node_global;C:\Users\zjg\AppData\Local\Microsoft\WindowsApps;C:\Users\zjg\AppData\Roaming\npm;;.]
+2018-08-12 08:44:37.198 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-08-12 08:44:37.198 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2859 ms
+2018-08-12 08:44:37.326 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-08-12 08:44:37.333 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-12 08:44:37.334 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-12 08:44:37.334 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-12 08:44:37.335 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-12 08:44:37.544 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 08:44:37.815 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@17877bdc: startup date [Sun Aug 12 08:44:34 CST 2018]; root of context hierarchy
+2018-08-12 08:44:37.885 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ssocheck],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.checkCookies(javax.servlet.http.HttpServletRequest)
+2018-08-12 08:44:37.886 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addcookie],methods=[GET]}" onto public void org.wlgzs.website.controller.LoginController.addCookies(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:44:37.887 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.doLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:44:37.888 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/login],methods=[GET]}" onto public boolean org.wlgzs.website.controller.SsoCheck.checkLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:44:37.889 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/authcookies],methods=[GET]}" onto public org.wlgzs.website.util.Result.Result org.wlgzs.website.controller.SsoCheck.checkAuthCookies(java.lang.String,java.lang.String)
+2018-08-12 08:44:37.892 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-12 08:44:37.893 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:44:37.935 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 08:44:37.935 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 08:44:38.023 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-08-12 08:44:38.138 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-08-12 08:44:38.767 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-12 08:44:38.823 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-12 08:44:38.826 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-12 08:44:38.840 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-12 08:44:38.856 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-12 08:44:38.872 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-08-12 08:44:38.900 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-12 08:44:38.906 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Started OrgApplication in 6.181 seconds (JVM running for 7.878)
+2018-08-12 08:46:59.936 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-12 08:46:59.937 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-12 08:46:59.974 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+2018-08-12 08:47:00.041 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 08:47:51.294 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Starting OrgApplication on DESKTOP-PB3M6A6 with PID 16700 (E:\workspace\wlgzs-tbUser\target\classes started by zjg in E:\workspace\wlgzs-tbUser)
+2018-08-12 08:47:51.296 [restartedMain] INFO  org.wlgzs.website.OrgApplication - The following profiles are active: dev
+2018-08-12 08:47:51.543 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ed0a06b: startup date [Sun Aug 12 08:47:51 CST 2018]; root of context hierarchy
+2018-08-12 08:47:52.989 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.wlgzs.website]' package. Please check your configuration.
+2018-08-12 08:47:54.502 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-08-12 08:47:54.523 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-12 08:47:54.538 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-08-12 08:47:54.538 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-12 08:47:54.548 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\environment\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\environment\Git\cmd;E:\environment\jdk\bin;E:\ideaIU-2017.3.5.win\plugins\maven\lib\maven3\bin;E:\environment\node\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;%mariadb%\bin;E:\environment\node\node_global;C:\Users\zjg\AppData\Local\Microsoft\WindowsApps;C:\Users\zjg\AppData\Roaming\npm;;.]
+2018-08-12 08:47:54.740 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-08-12 08:47:54.740 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3197 ms
+2018-08-12 08:47:54.900 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-08-12 08:47:54.908 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-12 08:47:54.909 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-12 08:47:54.909 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-12 08:47:54.909 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-12 08:47:55.150 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 08:47:55.468 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ed0a06b: startup date [Sun Aug 12 08:47:51 CST 2018]; root of context hierarchy
+2018-08-12 08:47:55.546 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.doLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:47:55.549 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addcookie],methods=[GET]}" onto public void org.wlgzs.website.controller.LoginController.addCookies(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:47:55.550 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ssocheck],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.checkCookies(javax.servlet.http.HttpServletRequest)
+2018-08-12 08:47:55.552 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/authcookies],methods=[GET]}" onto public org.wlgzs.website.util.Result.Result org.wlgzs.website.controller.SsoCheck.checkAuthCookies(java.lang.String,java.lang.String)
+2018-08-12 08:47:55.554 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/login],methods=[GET]}" onto public boolean org.wlgzs.website.controller.SsoCheck.checkLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:47:55.559 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-12 08:47:55.560 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:47:55.603 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 08:47:55.603 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 08:47:55.706 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-08-12 08:47:55.794 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-08-12 08:47:56.573 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-12 08:47:56.621 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-12 08:47:56.623 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-12 08:47:56.633 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-12 08:47:56.649 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-12 08:47:57.027 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-08-12 08:47:57.227 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-12 08:47:57.233 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Started OrgApplication in 7.125 seconds (JVM running for 8.807)
+2018-08-12 08:52:43.930 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-12 08:52:43.930 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-12 08:52:43.979 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 49 ms
+2018-08-12 08:52:44.122 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 08:52:44.123 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 08:52:44.123 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 08:52:44.123 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.LoginController - false:--
+2018-08-12 08:54:58.170 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Starting OrgApplication on DESKTOP-PB3M6A6 with PID 12372 (E:\workspace\wlgzs-tbUser\target\classes started by zjg in E:\workspace\wlgzs-tbUser)
+2018-08-12 08:54:58.172 [restartedMain] INFO  org.wlgzs.website.OrgApplication - The following profiles are active: dev
+2018-08-12 08:54:58.344 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a1479a7: startup date [Sun Aug 12 08:54:58 CST 2018]; root of context hierarchy
+2018-08-12 08:55:00.045 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.wlgzs.website]' package. Please check your configuration.
+2018-08-12 08:55:01.514 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-08-12 08:55:01.542 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-12 08:55:01.561 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-08-12 08:55:01.563 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-12 08:55:01.574 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\environment\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\environment\Git\cmd;E:\environment\jdk\bin;E:\ideaIU-2017.3.5.win\plugins\maven\lib\maven3\bin;E:\environment\node\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;%mariadb%\bin;E:\environment\node\node_global;C:\Users\zjg\AppData\Local\Microsoft\WindowsApps;C:\Users\zjg\AppData\Roaming\npm;;.]
+2018-08-12 08:55:01.747 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-08-12 08:55:01.748 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3404 ms
+2018-08-12 08:55:01.870 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-08-12 08:55:01.877 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-12 08:55:01.878 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-12 08:55:01.878 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-12 08:55:01.878 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-12 08:55:02.107 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 08:55:02.504 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a1479a7: startup date [Sun Aug 12 08:54:58 CST 2018]; root of context hierarchy
+2018-08-12 08:55:02.589 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ssocheck],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.checkCookies(javax.servlet.http.HttpServletRequest)
+2018-08-12 08:55:02.590 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addcookie],methods=[GET]}" onto public void org.wlgzs.website.controller.LoginController.addCookies(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:55:02.590 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.doLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:55:02.592 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/login],methods=[GET]}" onto public boolean org.wlgzs.website.controller.SsoCheck.checkLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:55:02.592 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/authcookies],methods=[GET]}" onto public org.wlgzs.website.util.Result.Result org.wlgzs.website.controller.SsoCheck.checkAuthCookies(java.lang.String,java.lang.String)
+2018-08-12 08:55:02.596 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-12 08:55:02.597 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-12 08:55:02.636 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 08:55:02.637 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 08:55:02.744 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-08-12 08:55:02.828 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-08-12 08:55:03.466 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-12 08:55:03.511 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-12 08:55:03.513 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-12 08:55:03.520 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-12 08:55:03.533 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-12 08:55:03.551 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-08-12 08:55:03.583 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-12 08:55:03.590 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Started OrgApplication in 6.722 seconds (JVM running for 8.669)
+2018-08-12 08:55:07.837 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-12 08:55:07.838 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-12 08:55:07.870 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2018-08-12 08:55:07.934 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 08:55:07.934 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 08:55:07.934 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 08:55:15.475 [http-nio-8080-exec-4] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 08:55:15.476 [http-nio-8080-exec-4] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 08:55:15.476 [http-nio-8080-exec-4] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 08:55:15.477 [http-nio-8080-exec-4] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://127.0.0.1:8080/addcookie ,请求方式为：GET
+2018-08-12 08:55:16.724 [http-nio-8080-exec-5] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 08:55:16.753 [http-nio-8080-exec-4] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://127.0.0.1:8080/addcookie 发送并接收成功
+2018-08-12 08:55:16.753 [http-nio-8080-exec-4] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 08:56:45.791 [http-nio-8080-exec-5] WARN  org.springframework.web.servlet.PageNotFound - Request method 'GET' not supported
+2018-08-12 08:56:45.792 [http-nio-8080-exec-5] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+2018-08-12 08:56:49.826 [http-nio-8080-exec-6] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 08:57:19.496 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 08:57:19.496 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 08:57:19.496 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 09:01:48.381 [http-nio-8080-exec-10] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 09:02:29.035 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Starting OrgApplication on DESKTOP-PB3M6A6 with PID 17044 (E:\workspace\wlgzs-tbUser\target\classes started by zjg in E:\workspace\wlgzs-tbUser)
+2018-08-12 09:02:29.037 [restartedMain] INFO  org.wlgzs.website.OrgApplication - The following profiles are active: dev
+2018-08-12 09:02:29.271 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@20b7f5cd: startup date [Sun Aug 12 09:02:29 CST 2018]; root of context hierarchy
+2018-08-12 09:02:30.875 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.wlgzs.website]' package. Please check your configuration.
+2018-08-12 09:02:32.377 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-08-12 09:02:32.395 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-12 09:02:32.415 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-08-12 09:02:32.415 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-12 09:02:32.424 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\environment\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\environment\Git\cmd;E:\environment\jdk\bin;E:\ideaIU-2017.3.5.win\plugins\maven\lib\maven3\bin;E:\environment\node\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;%mariadb%\bin;E:\environment\node\node_global;C:\Users\zjg\AppData\Local\Microsoft\WindowsApps;C:\Users\zjg\AppData\Roaming\npm;;.]
+2018-08-12 09:02:32.600 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-08-12 09:02:32.601 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3330 ms
+2018-08-12 09:02:32.741 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-08-12 09:02:32.747 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-12 09:02:32.748 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-12 09:02:32.748 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-12 09:02:32.748 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-12 09:02:32.995 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 09:02:33.307 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@20b7f5cd: startup date [Sun Aug 12 09:02:29 CST 2018]; root of context hierarchy
+2018-08-12 09:02:33.401 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addcookie],methods=[GET]}" onto public void org.wlgzs.website.controller.LoginController.addCookies(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 09:02:33.402 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.doLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 09:02:33.403 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ssocheck],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.checkCookies(javax.servlet.http.HttpServletRequest)
+2018-08-12 09:02:33.405 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/authcookies],methods=[GET]}" onto public org.wlgzs.website.util.Result.Result org.wlgzs.website.controller.SsoCheck.checkAuthCookies(java.lang.String,java.lang.String)
+2018-08-12 09:02:33.406 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/login],methods=[GET]}" onto public boolean org.wlgzs.website.controller.SsoCheck.checkLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 09:02:33.410 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-12 09:02:33.411 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-12 09:02:33.445 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 09:02:33.445 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 09:02:33.529 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-08-12 09:02:33.610 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-08-12 09:02:34.298 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-12 09:02:34.338 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-12 09:02:34.340 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-12 09:02:34.347 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-12 09:02:34.362 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-12 09:02:34.381 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-08-12 09:02:34.412 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-12 09:02:34.419 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Started OrgApplication in 6.794 seconds (JVM running for 8.837)
+2018-08-12 09:02:43.566 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-12 09:02:43.566 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-12 09:02:43.596 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2018-08-12 09:03:01.981 [http-nio-8080-exec-9] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 09:03:01.981 [http-nio-8080-exec-9] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 09:03:01.982 [http-nio-8080-exec-9] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 09:03:59.289 [http-nio-8080-exec-2] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 09:03:59.290 [http-nio-8080-exec-2] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 09:03:59.290 [http-nio-8080-exec-2] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 09:03:59.293 [http-nio-8080-exec-2] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://127.0.0.1:8080/addcookie ,请求方式为：GET
+2018-08-12 09:04:00.204 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 09:04:00.237 [http-nio-8080-exec-2] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://127.0.0.1:8080/addcookie 发送并接收成功
+2018-08-12 09:04:00.238 [http-nio-8080-exec-2] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 14:44:43.295 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Starting OrgApplication on DESKTOP-PB3M6A6 with PID 4468 (E:\workspace\wlgzs-tbUser\target\classes started by zjg in E:\workspace\wlgzs-tbUser)
+2018-08-12 14:44:43.296 [restartedMain] INFO  org.wlgzs.website.OrgApplication - The following profiles are active: dev
+2018-08-12 14:44:43.460 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@42e53e71: startup date [Sun Aug 12 14:44:43 CST 2018]; root of context hierarchy
+2018-08-12 14:44:44.686 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.wlgzs.website]' package. Please check your configuration.
+2018-08-12 14:44:47.705 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-08-12 14:44:47.732 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-12 14:44:47.767 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-08-12 14:44:47.769 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-12 14:44:47.799 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\environment\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\environment\Git\cmd;E:\environment\jdk\bin;E:\ideaIU-2017.3.5.win\plugins\maven\lib\maven3\bin;E:\environment\node\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;%mariadb%\bin;E:\environment\node\node_global;C:\Users\zjg\AppData\Local\Microsoft\WindowsApps;C:\Users\zjg\AppData\Roaming\npm;;.]
+2018-08-12 14:44:48.183 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-08-12 14:44:48.184 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4724 ms
+2018-08-12 14:44:48.374 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-08-12 14:44:48.385 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-12 14:44:48.387 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-12 14:44:48.388 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-12 14:44:48.389 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-12 14:44:48.782 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 14:44:49.145 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@42e53e71: startup date [Sun Aug 12 14:44:43 CST 2018]; root of context hierarchy
+2018-08-12 14:44:49.278 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.doLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 14:44:49.280 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addcookie],methods=[GET]}" onto public void org.wlgzs.website.controller.LoginController.addCookies(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 14:44:49.281 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ssocheck],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.checkCookies(javax.servlet.http.HttpServletRequest)
+2018-08-12 14:44:49.282 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/login],methods=[GET]}" onto public boolean org.wlgzs.website.controller.SsoCheck.checkLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 14:44:49.283 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/authcookies],methods=[GET]}" onto public org.wlgzs.website.util.Result.Result org.wlgzs.website.controller.SsoCheck.checkAuthCookies(java.lang.String,java.lang.String)
+2018-08-12 14:44:49.287 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-12 14:44:49.288 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-12 14:44:49.335 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 14:44:49.336 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 14:44:49.433 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-08-12 14:44:49.533 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-08-12 14:44:50.313 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-12 14:44:50.352 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-12 14:44:50.354 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-12 14:44:50.363 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-12 14:44:50.378 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-12 14:44:50.395 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-08-12 14:44:50.432 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-12 14:44:50.444 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Started OrgApplication in 8.429 seconds (JVM running for 11.763)
+2018-08-12 14:45:31.140 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-12 14:45:31.141 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-12 14:45:31.179 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 38 ms
+2018-08-12 14:45:31.303 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 14:45:31.303 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 14:45:31.304 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 14:45:41.645 [http-nio-8080-exec-5] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 14:45:41.646 [http-nio-8080-exec-5] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 14:45:41.646 [http-nio-8080-exec-5] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 14:45:48.728 [http-nio-8080-exec-9] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 14:45:48.728 [http-nio-8080-exec-9] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 14:45:48.728 [http-nio-8080-exec-9] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 14:45:48.730 [http-nio-8080-exec-9] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://127.0.0.1:8080/addcookie ,请求方式为：GET
+2018-08-12 14:45:49.701 [http-nio-8080-exec-10] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 14:45:49.734 [http-nio-8080-exec-9] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://127.0.0.1:8080/addcookie 发送并接收成功
+2018-08-12 14:45:49.734 [http-nio-8080-exec-9] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 14:46:40.633 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Starting OrgApplication on DESKTOP-PB3M6A6 with PID 15844 (E:\workspace\wlgzs-tbUser\target\classes started by zjg in E:\workspace\wlgzs-tbUser)
+2018-08-12 14:46:40.635 [restartedMain] INFO  org.wlgzs.website.OrgApplication - The following profiles are active: dev
+2018-08-12 14:46:40.800 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d7901e6: startup date [Sun Aug 12 14:46:40 CST 2018]; root of context hierarchy
+2018-08-12 14:46:42.514 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.wlgzs.website]' package. Please check your configuration.
+2018-08-12 14:46:44.479 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-08-12 14:46:44.510 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-12 14:46:44.530 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-08-12 14:46:44.530 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-12 14:46:44.538 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\environment\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\environment\Git\cmd;E:\environment\jdk\bin;E:\ideaIU-2017.3.5.win\plugins\maven\lib\maven3\bin;E:\environment\node\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;%mariadb%\bin;E:\environment\node\node_global;C:\Users\zjg\AppData\Local\Microsoft\WindowsApps;C:\Users\zjg\AppData\Roaming\npm;;.]
+2018-08-12 14:46:44.723 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-08-12 14:46:44.725 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3925 ms
+2018-08-12 14:46:44.897 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-08-12 14:46:44.904 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-12 14:46:44.905 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-12 14:46:44.905 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-12 14:46:44.905 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-12 14:46:45.165 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 14:46:45.581 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d7901e6: startup date [Sun Aug 12 14:46:40 CST 2018]; root of context hierarchy
+2018-08-12 14:46:45.708 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addcookie],methods=[GET]}" onto public void org.wlgzs.website.controller.LoginController.addCookies(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 14:46:45.711 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ssocheck],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.checkCookies(javax.servlet.http.HttpServletRequest)
+2018-08-12 14:46:45.712 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.doLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 14:46:45.715 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/authcookies],methods=[GET]}" onto public org.wlgzs.website.util.Result.Result org.wlgzs.website.controller.SsoCheck.checkAuthCookies(java.lang.String,java.lang.String)
+2018-08-12 14:46:45.715 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/login],methods=[GET]}" onto public boolean org.wlgzs.website.controller.SsoCheck.checkLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 14:46:45.719 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-12 14:46:45.720 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-12 14:46:45.783 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 14:46:45.783 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 14:46:45.963 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-08-12 14:46:46.064 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-08-12 14:46:47.070 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-12 14:46:47.165 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-12 14:46:47.167 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-12 14:46:47.192 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-12 14:46:47.246 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-12 14:46:47.313 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-08-12 14:46:47.364 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-12 14:46:47.373 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Started OrgApplication in 8.428 seconds (JVM running for 10.902)
+2018-08-12 14:46:54.908 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-12 14:46:54.908 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-12 14:46:54.945 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+2018-08-12 14:46:54.977 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.PageNotFound - Request method 'GET' not supported
+2018-08-12 14:46:54.978 [http-nio-8080-exec-1] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+2018-08-12 14:47:07.505 [http-nio-8080-exec-8] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 14:47:07.505 [http-nio-8080-exec-8] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 14:47:07.505 [http-nio-8080-exec-8] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 14:47:11.833 [http-nio-8080-exec-10] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 14:47:11.833 [http-nio-8080-exec-10] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 14:47:11.833 [http-nio-8080-exec-10] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 14:47:11.836 [http-nio-8080-exec-10] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://127.0.0.1:8080/addcookie ,请求方式为：GET
+2018-08-12 14:47:12.535 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 14:47:12.558 [http-nio-8080-exec-10] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://127.0.0.1:8080/addcookie 发送并接收成功
+2018-08-12 14:47:12.558 [http-nio-8080-exec-10] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 15:36:29.512 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Starting OrgApplication on DESKTOP-PB3M6A6 with PID 14456 (E:\workspace\wlgzs-tbUser\target\classes started by zjg in E:\workspace\wlgzs-tbUser)
+2018-08-12 15:36:29.513 [restartedMain] INFO  org.wlgzs.website.OrgApplication - The following profiles are active: dev
+2018-08-12 15:36:29.630 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@770e6f98: startup date [Sun Aug 12 15:36:29 CST 2018]; root of context hierarchy
+2018-08-12 15:36:31.274 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.wlgzs.website]' package. Please check your configuration.
+2018-08-12 15:36:33.486 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-08-12 15:36:33.511 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-12 15:36:33.536 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-08-12 15:36:33.536 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-12 15:36:33.544 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\environment\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\environment\Git\cmd;E:\environment\jdk\bin;E:\ideaIU-2017.3.5.win\plugins\maven\lib\maven3\bin;E:\environment\node\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;%mariadb%\bin;E:\environment\node\node_global;C:\Users\zjg\AppData\Local\Microsoft\WindowsApps;C:\Users\zjg\AppData\Roaming\npm;;.]
+2018-08-12 15:36:33.762 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-08-12 15:36:33.763 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4133 ms
+2018-08-12 15:36:33.921 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-08-12 15:36:33.931 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-12 15:36:33.931 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-12 15:36:33.931 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-12 15:36:33.932 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-12 15:36:34.146 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 15:36:34.451 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@770e6f98: startup date [Sun Aug 12 15:36:29 CST 2018]; root of context hierarchy
+2018-08-12 15:36:34.534 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addcookie],methods=[GET]}" onto public void org.wlgzs.website.controller.LoginController.addCookies(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 15:36:34.537 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ssocheck],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.checkCookies(javax.servlet.http.HttpServletRequest)
+2018-08-12 15:36:34.538 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.doLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 15:36:34.541 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/authcookies],methods=[GET]}" onto public org.wlgzs.website.util.Result.Result org.wlgzs.website.controller.SsoCheck.checkAuthCookies(java.lang.String,java.lang.String)
+2018-08-12 15:36:34.541 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/login],methods=[GET]}" onto public boolean org.wlgzs.website.controller.SsoCheck.checkLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 15:36:34.547 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-12 15:36:34.549 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-12 15:36:34.597 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 15:36:34.603 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 15:36:34.693 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-08-12 15:36:34.767 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-08-12 15:36:35.791 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-12 15:36:35.879 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-12 15:36:35.882 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-12 15:36:35.891 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-12 15:36:35.933 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-12 15:36:35.985 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-08-12 15:36:36.036 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-12 15:36:36.049 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Started OrgApplication in 7.554 seconds (JVM running for 9.979)
+2018-08-12 15:36:50.687 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-12 15:36:50.688 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-12 15:36:50.726 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+2018-08-12 15:36:57.905 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 15:36:57.905 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 15:36:57.905 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 15:36:57.907 [http-nio-8080-exec-3] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://127.0.0.1:8080/addcookie ,请求方式为：GET
+2018-08-12 15:36:58.559 [http-nio-8080-exec-9] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 15:36:58.577 [http-nio-8080-exec-9] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: An invalid domain [.localhost] was specified for this cookie] with root cause
+java.lang.IllegalArgumentException: An invalid domain [.localhost] was specified for this cookie
+	at org.apache.tomcat.util.http.Rfc6265CookieProcessor.validateDomain(Rfc6265CookieProcessor.java:203)
+	at org.apache.tomcat.util.http.Rfc6265CookieProcessor.generateHeader(Rfc6265CookieProcessor.java:145)
+	at org.apache.catalina.connector.Response.generateCookieString(Response.java:1019)
+	at org.apache.catalina.connector.Response.addCookie(Response.java:967)
+	at org.apache.catalina.connector.ResponseFacade.addCookie(ResponseFacade.java:386)
+	at org.wlgzs.website.controller.LoginController.addCookies(LoginController.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-08-12 15:36:58.607 [http-nio-8080-exec-3] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://127.0.0.1:8080/addcookie 发送并接收成功
+2018-08-12 15:36:58.607 [http-nio-8080-exec-3] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：ResponseEntityProxy{[Content-Type: application/json;charset=UTF-8,Chunked: true]}
+2018-08-12 15:37:41.798 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Starting OrgApplication on DESKTOP-PB3M6A6 with PID 76 (E:\workspace\wlgzs-tbUser\target\classes started by zjg in E:\workspace\wlgzs-tbUser)
+2018-08-12 15:37:41.805 [restartedMain] INFO  org.wlgzs.website.OrgApplication - The following profiles are active: dev
+2018-08-12 15:37:41.968 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@474565dd: startup date [Sun Aug 12 15:37:41 CST 2018]; root of context hierarchy
+2018-08-12 15:37:43.452 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.wlgzs.website]' package. Please check your configuration.
+2018-08-12 15:37:44.754 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-08-12 15:37:44.772 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-12 15:37:44.787 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-08-12 15:37:44.787 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-12 15:37:44.794 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\environment\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\environment\Git\cmd;E:\environment\jdk\bin;E:\ideaIU-2017.3.5.win\plugins\maven\lib\maven3\bin;E:\environment\node\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;%mariadb%\bin;E:\environment\node\node_global;C:\Users\zjg\AppData\Local\Microsoft\WindowsApps;C:\Users\zjg\AppData\Roaming\npm;;.]
+2018-08-12 15:37:44.946 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-08-12 15:37:44.946 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2978 ms
+2018-08-12 15:37:45.084 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-08-12 15:37:45.091 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-12 15:37:45.091 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-12 15:37:45.091 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-12 15:37:45.091 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-12 15:37:45.285 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 15:37:45.571 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@474565dd: startup date [Sun Aug 12 15:37:41 CST 2018]; root of context hierarchy
+2018-08-12 15:37:45.654 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addcookie],methods=[GET]}" onto public void org.wlgzs.website.controller.LoginController.addCookies(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 15:37:45.655 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.doLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 15:37:45.656 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ssocheck],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.checkCookies(javax.servlet.http.HttpServletRequest)
+2018-08-12 15:37:45.658 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/authcookies],methods=[GET]}" onto public org.wlgzs.website.util.Result.Result org.wlgzs.website.controller.SsoCheck.checkAuthCookies(java.lang.String,java.lang.String)
+2018-08-12 15:37:45.659 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/login],methods=[GET]}" onto public boolean org.wlgzs.website.controller.SsoCheck.checkLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 15:37:45.665 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-12 15:37:45.666 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-12 15:37:45.701 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 15:37:45.701 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 15:37:45.797 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-08-12 15:37:45.901 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-08-12 15:37:46.550 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-12 15:37:46.598 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-12 15:37:46.600 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-12 15:37:46.610 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-12 15:37:46.629 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-12 15:37:46.649 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-08-12 15:37:46.686 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-12 15:37:46.692 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Started OrgApplication in 6.432 seconds (JVM running for 8.424)
+2018-08-12 15:38:40.221 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-12 15:38:40.221 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-12 15:38:40.265 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2018-08-12 15:38:45.695 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 15:38:45.695 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 15:38:45.695 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 15:38:45.696 [http-nio-8080-exec-3] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://127.0.0.1:8080/addcookie ,请求方式为：GET
+2018-08-12 15:38:46.228 [http-nio-8080-exec-5] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 15:38:46.252 [http-nio-8080-exec-3] WARN  o.a.http.client.protocol.ResponseProcessCookies - Cookie rejected [lovewlgzs="ok", version:0, domain:localhost, path:/, expiry:null] Illegal 'domain' attribute "localhost". Domain of origin: "127.0.0.1"
+2018-08-12 15:38:46.252 [http-nio-8080-exec-3] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://127.0.0.1:8080/addcookie 发送并接收成功
+2018-08-12 15:38:46.252 [http-nio-8080-exec-3] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 15:39:51.273 [http-nio-8080-exec-8] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 15:39:51.273 [http-nio-8080-exec-8] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 15:39:51.273 [http-nio-8080-exec-8] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 15:39:51.273 [http-nio-8080-exec-8] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://127.0.0.1:8080/addcookie ,请求方式为：GET
+2018-08-12 15:39:51.294 [http-nio-8080-exec-10] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 15:39:51.296 [http-nio-8080-exec-8] WARN  o.a.http.client.protocol.ResponseProcessCookies - Cookie rejected [lovewlgzs="ok", version:0, domain:localhost, path:/, expiry:null] Illegal 'domain' attribute "localhost". Domain of origin: "127.0.0.1"
+2018-08-12 15:39:51.296 [http-nio-8080-exec-8] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://127.0.0.1:8080/addcookie 发送并接收成功
+2018-08-12 15:39:51.296 [http-nio-8080-exec-8] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 15:48:23.937 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 15:48:23.938 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 15:48:23.938 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 15:48:23.938 [http-nio-8080-exec-1] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://127.0.0.1:8080/addcookie ,请求方式为：GET
+2018-08-12 15:48:23.950 [http-nio-8080-exec-5] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 15:48:23.953 [http-nio-8080-exec-1] WARN  o.a.http.client.protocol.ResponseProcessCookies - Cookie rejected [lovewlgzs="ok", version:0, domain:localhost, path:/, expiry:null] Illegal 'domain' attribute "localhost". Domain of origin: "127.0.0.1"
+2018-08-12 15:48:23.953 [http-nio-8080-exec-1] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://127.0.0.1:8080/addcookie 发送并接收成功
+2018-08-12 15:48:23.953 [http-nio-8080-exec-1] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 15:55:37.452 [http-nio-8080-exec-9] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 15:55:37.452 [http-nio-8080-exec-9] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 15:55:37.452 [http-nio-8080-exec-9] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 15:55:37.452 [http-nio-8080-exec-9] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://127.0.0.1:8080/addcookie ,请求方式为：GET
+2018-08-12 15:55:37.463 [http-nio-8080-exec-10] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 15:55:37.465 [http-nio-8080-exec-9] WARN  o.a.http.client.protocol.ResponseProcessCookies - Cookie rejected [lovewlgzs="ok", version:0, domain:localhost, path:/, expiry:null] Illegal 'domain' attribute "localhost". Domain of origin: "127.0.0.1"
+2018-08-12 15:55:37.466 [http-nio-8080-exec-9] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://127.0.0.1:8080/addcookie 发送并接收成功
+2018-08-12 15:55:37.466 [http-nio-8080-exec-9] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 16:12:58.215 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Starting OrgApplication on DESKTOP-PB3M6A6 with PID 5384 (E:\workspace\wlgzs-tbUser\target\classes started by zjg in E:\workspace\wlgzs-tbUser)
+2018-08-12 16:12:58.216 [restartedMain] INFO  org.wlgzs.website.OrgApplication - The following profiles are active: dev
+2018-08-12 16:12:58.413 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2342bfe9: startup date [Sun Aug 12 16:12:58 CST 2018]; root of context hierarchy
+2018-08-12 16:12:59.516 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.wlgzs.website]' package. Please check your configuration.
+2018-08-12 16:13:00.817 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-08-12 16:13:00.837 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-12 16:13:00.850 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-08-12 16:13:00.850 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-12 16:13:00.855 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\environment\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\environment\Git\cmd;E:\environment\jdk\bin;E:\ideaIU-2017.3.5.win\plugins\maven\lib\maven3\bin;E:\environment\node\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;%mariadb%\bin;E:\environment\node\node_global;C:\Users\zjg\AppData\Local\Microsoft\WindowsApps;C:\Users\zjg\AppData\Roaming\npm;;.]
+2018-08-12 16:13:01.013 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-08-12 16:13:01.014 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2602 ms
+2018-08-12 16:13:01.167 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-08-12 16:13:01.174 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-12 16:13:01.175 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-12 16:13:01.175 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-12 16:13:01.175 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-12 16:13:01.491 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 16:13:01.827 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2342bfe9: startup date [Sun Aug 12 16:12:58 CST 2018]; root of context hierarchy
+2018-08-12 16:13:01.913 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.doLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 16:13:01.914 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addcookie],methods=[GET]}" onto public void org.wlgzs.website.controller.LoginController.addCookies(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 16:13:01.914 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ssocheck],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.checkCookies(javax.servlet.http.HttpServletRequest)
+2018-08-12 16:13:01.916 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/authcookies],methods=[GET]}" onto public org.wlgzs.website.util.Result.Result org.wlgzs.website.controller.SsoCheck.checkAuthCookies(java.lang.String,java.lang.String)
+2018-08-12 16:13:01.917 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/login],methods=[GET]}" onto public boolean org.wlgzs.website.controller.SsoCheck.checkLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 16:13:01.921 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-12 16:13:01.922 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-12 16:13:01.960 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 16:13:01.960 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 16:13:02.053 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-08-12 16:13:02.175 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-08-12 16:13:02.800 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-12 16:13:02.836 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-12 16:13:02.838 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-12 16:13:02.846 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-12 16:13:02.866 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-12 16:13:02.883 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-08-12 16:13:02.917 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-12 16:13:02.922 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Started OrgApplication in 5.72 seconds (JVM running for 8.287)
+2018-08-12 16:13:05.551 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-12 16:13:05.552 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-12 16:13:05.585 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2018-08-12 16:13:12.337 [http-nio-8080-exec-5] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 16:13:12.337 [http-nio-8080-exec-5] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 16:13:12.338 [http-nio-8080-exec-5] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 16:13:12.339 [http-nio-8080-exec-5] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://127.0.0.1:8080/addcookie ,请求方式为：GET
+2018-08-12 16:13:12.934 [http-nio-8080-exec-4] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 16:13:12.955 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: An invalid domain [http://172.28.102.7] was specified for this cookie] with root cause
+java.lang.IllegalArgumentException: An invalid domain [http://172.28.102.7] was specified for this cookie
+	at org.apache.tomcat.util.http.Rfc6265CookieProcessor.validateDomain(Rfc6265CookieProcessor.java:198)
+	at org.apache.tomcat.util.http.Rfc6265CookieProcessor.generateHeader(Rfc6265CookieProcessor.java:145)
+	at org.apache.catalina.connector.Response.generateCookieString(Response.java:1019)
+	at org.apache.catalina.connector.Response.addCookie(Response.java:967)
+	at org.apache.catalina.connector.ResponseFacade.addCookie(ResponseFacade.java:386)
+	at org.wlgzs.website.controller.LoginController.addCookies(LoginController.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-08-12 16:13:12.978 [http-nio-8080-exec-5] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://127.0.0.1:8080/addcookie 发送并接收成功
+2018-08-12 16:13:12.978 [http-nio-8080-exec-5] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：ResponseEntityProxy{[Content-Type: application/json;charset=UTF-8,Chunked: true]}
+2018-08-12 16:13:41.964 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Starting OrgApplication on DESKTOP-PB3M6A6 with PID 13104 (E:\workspace\wlgzs-tbUser\target\classes started by zjg in E:\workspace\wlgzs-tbUser)
+2018-08-12 16:13:41.966 [restartedMain] INFO  org.wlgzs.website.OrgApplication - The following profiles are active: dev
+2018-08-12 16:13:42.136 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2ccb3531: startup date [Sun Aug 12 16:13:42 CST 2018]; root of context hierarchy
+2018-08-12 16:13:43.412 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.wlgzs.website]' package. Please check your configuration.
+2018-08-12 16:13:44.728 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-08-12 16:13:44.746 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-12 16:13:44.760 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-08-12 16:13:44.761 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-12 16:13:44.767 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\environment\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\environment\Git\cmd;E:\environment\jdk\bin;E:\ideaIU-2017.3.5.win\plugins\maven\lib\maven3\bin;E:\environment\node\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;%mariadb%\bin;E:\environment\node\node_global;C:\Users\zjg\AppData\Local\Microsoft\WindowsApps;C:\Users\zjg\AppData\Roaming\npm;;.]
+2018-08-12 16:13:44.947 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-08-12 16:13:44.947 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2811 ms
+2018-08-12 16:13:45.066 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-08-12 16:13:45.079 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-12 16:13:45.080 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-12 16:13:45.080 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-12 16:13:45.080 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-12 16:13:45.281 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 16:13:45.600 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2ccb3531: startup date [Sun Aug 12 16:13:42 CST 2018]; root of context hierarchy
+2018-08-12 16:13:45.682 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.doLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 16:13:45.684 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addcookie],methods=[GET]}" onto public void org.wlgzs.website.controller.LoginController.addCookies(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 16:13:45.684 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ssocheck],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.checkCookies(javax.servlet.http.HttpServletRequest)
+2018-08-12 16:13:45.686 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/login],methods=[GET]}" onto public boolean org.wlgzs.website.controller.SsoCheck.checkLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 16:13:45.687 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/authcookies],methods=[GET]}" onto public org.wlgzs.website.util.Result.Result org.wlgzs.website.controller.SsoCheck.checkAuthCookies(java.lang.String,java.lang.String)
+2018-08-12 16:13:45.693 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-12 16:13:45.694 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-12 16:13:45.730 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 16:13:45.730 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 16:13:45.813 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-08-12 16:13:45.931 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-08-12 16:13:46.576 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-12 16:13:46.622 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-12 16:13:46.623 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-12 16:13:46.632 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-12 16:13:46.651 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-12 16:13:46.668 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-08-12 16:13:46.706 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-12 16:13:46.711 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Started OrgApplication in 5.939 seconds (JVM running for 8.478)
+2018-08-12 16:14:27.264 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-12 16:14:27.265 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-12 16:14:27.294 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-08-12 16:14:29.626 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 16:14:29.626 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 16:14:29.626 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 16:14:29.627 [http-nio-8080-exec-3] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://127.0.0.1:8080/addcookie ,请求方式为：GET
+2018-08-12 16:14:30.181 [http-nio-8080-exec-5] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 16:14:30.209 [http-nio-8080-exec-3] WARN  o.a.http.client.protocol.ResponseProcessCookies - Cookie rejected [lovewlgzs="ok", version:0, domain:172.28.102.7, path:/, expiry:null] Illegal 'domain' attribute "172.28.102.7". Domain of origin: "127.0.0.1"
+2018-08-12 16:14:30.209 [http-nio-8080-exec-3] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://127.0.0.1:8080/addcookie 发送并接收成功
+2018-08-12 16:14:30.210 [http-nio-8080-exec-3] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 16:23:42.430 [http-nio-8080-exec-9] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 16:24:06.025 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Starting OrgApplication on DESKTOP-PB3M6A6 with PID 17048 (E:\workspace\wlgzs-tbUser\target\classes started by zjg in E:\workspace\wlgzs-tbUser)
+2018-08-12 16:24:06.027 [restartedMain] INFO  org.wlgzs.website.OrgApplication - The following profiles are active: dev
+2018-08-12 16:24:06.208 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40091cb6: startup date [Sun Aug 12 16:24:06 CST 2018]; root of context hierarchy
+2018-08-12 16:24:07.482 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.wlgzs.website]' package. Please check your configuration.
+2018-08-12 16:24:08.678 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-08-12 16:24:08.698 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-12 16:24:08.711 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-08-12 16:24:08.712 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-12 16:24:08.717 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\environment\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\environment\Git\cmd;E:\environment\jdk\bin;E:\ideaIU-2017.3.5.win\plugins\maven\lib\maven3\bin;E:\environment\node\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;%mariadb%\bin;E:\environment\node\node_global;C:\Users\zjg\AppData\Local\Microsoft\WindowsApps;C:\Users\zjg\AppData\Roaming\npm;;.]
+2018-08-12 16:24:08.897 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-08-12 16:24:08.898 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2690 ms
+2018-08-12 16:24:09.028 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-08-12 16:24:09.037 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-12 16:24:09.038 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-12 16:24:09.038 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-12 16:24:09.038 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-12 16:24:09.261 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 16:24:09.510 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40091cb6: startup date [Sun Aug 12 16:24:06 CST 2018]; root of context hierarchy
+2018-08-12 16:24:09.578 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.doLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 16:24:09.579 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ssocheck],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.checkCookies(javax.servlet.http.HttpServletRequest)
+2018-08-12 16:24:09.579 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addcookie],methods=[GET]}" onto public void org.wlgzs.website.controller.LoginController.addCookies(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 16:24:09.581 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/authcookies],methods=[GET]}" onto public org.wlgzs.website.util.Result.Result org.wlgzs.website.controller.SsoCheck.checkAuthCookies(java.lang.String,java.lang.String)
+2018-08-12 16:24:09.581 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/login],methods=[GET]}" onto public boolean org.wlgzs.website.controller.SsoCheck.checkLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 16:24:09.584 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-12 16:24:09.585 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-12 16:24:09.624 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 16:24:09.625 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 16:24:09.697 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-08-12 16:24:09.774 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-08-12 16:24:10.433 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-12 16:24:10.475 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-12 16:24:10.477 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-12 16:24:10.484 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-12 16:24:10.501 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-12 16:24:10.520 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-08-12 16:24:10.555 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-12 16:24:10.560 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Started OrgApplication in 5.82 seconds (JVM running for 7.786)
+2018-08-12 16:24:21.955 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-12 16:24:21.956 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-12 16:24:21.994 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+2018-08-12 16:24:22.047 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 16:25:05.606 [http-nio-8080-exec-2] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 16:25:05.607 [http-nio-8080-exec-2] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 16:25:05.607 [http-nio-8080-exec-2] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 16:25:05.609 [http-nio-8080-exec-2] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://127.0.0.1:8080/addcookie ,请求方式为：GET
+2018-08-12 16:25:06.421 [http-nio-8080-exec-5] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 16:25:06.440 [http-nio-8080-exec-2] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://127.0.0.1:8080/addcookie 发送并接收成功
+2018-08-12 16:25:06.441 [http-nio-8080-exec-2] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 16:25:43.652 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 16:26:12.483 [http-nio-8080-exec-4] WARN  org.springframework.web.servlet.PageNotFound - Request method 'GET' not supported
+2018-08-12 16:26:12.483 [http-nio-8080-exec-4] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+2018-08-12 16:26:20.131 [http-nio-8080-exec-2] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 16:26:20.131 [http-nio-8080-exec-2] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 16:26:20.131 [http-nio-8080-exec-2] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 16:26:20.131 [http-nio-8080-exec-2] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://127.0.0.1:8080/addcookie ,请求方式为：GET
+2018-08-12 16:26:20.143 [http-nio-8080-exec-7] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 16:26:20.145 [http-nio-8080-exec-2] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://127.0.0.1:8080/addcookie 发送并接收成功
+2018-08-12 16:26:20.146 [http-nio-8080-exec-2] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 16:26:33.051 [http-nio-8080-exec-4] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 16:26:33.052 [http-nio-8080-exec-4] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 16:26:33.052 [http-nio-8080-exec-4] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 16:26:33.052 [http-nio-8080-exec-4] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://127.0.0.1:8080/addcookie ,请求方式为：GET
+2018-08-12 16:26:33.063 [http-nio-8080-exec-5] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 16:26:33.065 [http-nio-8080-exec-4] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://127.0.0.1:8080/addcookie 发送并接收成功
+2018-08-12 16:26:33.065 [http-nio-8080-exec-4] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 16:29:06.477 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Starting OrgApplication on DESKTOP-PB3M6A6 with PID 12272 (E:\workspace\wlgzs-tbUser\target\classes started by zjg in E:\workspace\wlgzs-tbUser)
+2018-08-12 16:29:06.478 [restartedMain] INFO  org.wlgzs.website.OrgApplication - The following profiles are active: dev
+2018-08-12 16:29:06.594 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5fe41564: startup date [Sun Aug 12 16:29:06 CST 2018]; root of context hierarchy
+2018-08-12 16:29:07.730 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.wlgzs.website]' package. Please check your configuration.
+2018-08-12 16:29:08.892 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-08-12 16:29:08.908 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-12 16:29:08.921 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-08-12 16:29:08.921 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-12 16:29:08.927 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\environment\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\environment\Git\cmd;E:\environment\jdk\bin;E:\ideaIU-2017.3.5.win\plugins\maven\lib\maven3\bin;E:\environment\node\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;%mariadb%\bin;E:\environment\node\node_global;C:\Users\zjg\AppData\Local\Microsoft\WindowsApps;C:\Users\zjg\AppData\Roaming\npm;;.]
+2018-08-12 16:29:09.078 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-08-12 16:29:09.080 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2486 ms
+2018-08-12 16:29:09.233 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-08-12 16:29:09.242 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-12 16:29:09.243 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-12 16:29:09.243 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-12 16:29:09.243 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-12 16:29:09.569 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 16:29:09.873 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5fe41564: startup date [Sun Aug 12 16:29:06 CST 2018]; root of context hierarchy
+2018-08-12 16:29:09.944 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.doLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 16:29:09.947 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addcookie],methods=[GET]}" onto public void org.wlgzs.website.controller.LoginController.addCookies(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 16:29:09.948 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ssocheck],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.checkCookies(javax.servlet.http.HttpServletRequest)
+2018-08-12 16:29:09.951 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/login],methods=[GET]}" onto public boolean org.wlgzs.website.controller.SsoCheck.checkLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 16:29:09.951 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/authcookies],methods=[GET]}" onto public org.wlgzs.website.util.Result.Result org.wlgzs.website.controller.SsoCheck.checkAuthCookies(java.lang.String,java.lang.String)
+2018-08-12 16:29:09.956 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-12 16:29:09.957 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-12 16:29:09.995 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 16:29:09.996 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 16:29:10.074 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-08-12 16:29:10.193 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-08-12 16:29:10.814 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-12 16:29:10.864 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-12 16:29:10.869 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-12 16:29:10.876 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-12 16:29:10.891 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-12 16:29:10.907 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-08-12 16:29:10.939 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-12 16:29:10.944 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Started OrgApplication in 5.642 seconds (JVM running for 8.185)
+2018-08-12 16:29:22.729 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-12 16:29:22.730 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-12 16:29:22.771 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+2018-08-12 16:29:22.859 [http-nio-8080-exec-2] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 16:29:22.859 [http-nio-8080-exec-2] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 16:29:22.859 [http-nio-8080-exec-2] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 16:29:22.861 [http-nio-8080-exec-2] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://172.28.102.7:8080/addcookie ,请求方式为：GET
+2018-08-12 16:29:23.413 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 16:29:23.438 [http-nio-8080-exec-2] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://172.28.102.7:8080/addcookie 发送并接收成功
+2018-08-12 16:29:23.438 [http-nio-8080-exec-2] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 16:29:53.102 [http-nio-8080-exec-8] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 16:29:53.102 [http-nio-8080-exec-8] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 16:29:53.102 [http-nio-8080-exec-8] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 16:29:53.102 [http-nio-8080-exec-8] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://172.28.102.7:8080/addcookie ,请求方式为：GET
+2018-08-12 16:29:53.118 [http-nio-8080-exec-9] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 16:29:53.120 [http-nio-8080-exec-8] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://172.28.102.7:8080/addcookie 发送并接收成功
+2018-08-12 16:29:53.120 [http-nio-8080-exec-8] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 16:30:28.337 [http-nio-8080-exec-6] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 16:30:28.337 [http-nio-8080-exec-6] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 16:30:28.337 [http-nio-8080-exec-6] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 16:30:28.338 [http-nio-8080-exec-6] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://172.28.102.7:8080/addcookie ,请求方式为：GET
+2018-08-12 16:30:28.353 [http-nio-8080-exec-9] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 16:30:28.356 [http-nio-8080-exec-6] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://172.28.102.7:8080/addcookie 发送并接收成功
+2018-08-12 16:30:28.356 [http-nio-8080-exec-6] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 16:30:53.044 [http-nio-8080-exec-5] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 16:30:53.044 [http-nio-8080-exec-5] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 16:30:53.044 [http-nio-8080-exec-5] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 16:30:53.044 [http-nio-8080-exec-5] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://172.28.102.7:8080/addcookie ,请求方式为：GET
+2018-08-12 16:30:53.059 [http-nio-8080-exec-4] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 16:30:53.062 [http-nio-8080-exec-5] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://172.28.102.7:8080/addcookie 发送并接收成功
+2018-08-12 16:30:53.062 [http-nio-8080-exec-5] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 16:36:06.730 [http-nio-8080-exec-2] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 16:36:06.731 [http-nio-8080-exec-2] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 16:36:06.732 [http-nio-8080-exec-2] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 16:36:06.732 [http-nio-8080-exec-2] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://172.28.102.7:8080/addcookie ,请求方式为：GET
+2018-08-12 16:36:06.750 [http-nio-8080-exec-4] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 16:36:06.753 [http-nio-8080-exec-2] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://172.28.102.7:8080/addcookie 发送并接收成功
+2018-08-12 16:36:06.753 [http-nio-8080-exec-2] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 17:22:18.013 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 17:22:18.018 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 17:22:18.018 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 17:22:18.018 [http-nio-8080-exec-3] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://172.28.102.7:8080/addcookie ,请求方式为：GET
+2018-08-12 17:22:18.047 [http-nio-8080-exec-4] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 17:22:18.049 [http-nio-8080-exec-3] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://172.28.102.7:8080/addcookie 发送并接收成功
+2018-08-12 17:22:18.049 [http-nio-8080-exec-3] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 17:28:54.852 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Starting OrgApplication on DESKTOP-PB3M6A6 with PID 10796 (E:\workspace\wlgzs-tbUser\target\classes started by zjg in E:\workspace\wlgzs-tbUser)
+2018-08-12 17:28:54.854 [restartedMain] INFO  org.wlgzs.website.OrgApplication - The following profiles are active: dev
+2018-08-12 17:28:55.070 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@12405060: startup date [Sun Aug 12 17:28:55 CST 2018]; root of context hierarchy
+2018-08-12 17:28:56.307 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.wlgzs.website]' package. Please check your configuration.
+2018-08-12 17:28:58.357 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-08-12 17:28:58.384 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-12 17:28:58.400 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-08-12 17:28:58.400 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-12 17:28:58.410 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\environment\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\environment\Git\cmd;E:\environment\jdk\bin;E:\ideaIU-2017.3.5.win\plugins\maven\lib\maven3\bin;E:\environment\node\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;%mariadb%\bin;E:\environment\node\node_global;C:\Users\zjg\AppData\Local\Microsoft\WindowsApps;C:\Users\zjg\AppData\Roaming\npm;;.]
+2018-08-12 17:28:58.576 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-08-12 17:28:58.576 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3507 ms
+2018-08-12 17:28:58.707 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-08-12 17:28:58.716 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-12 17:28:58.717 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-12 17:28:58.717 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-12 17:28:58.718 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-12 17:28:58.907 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 17:28:59.216 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@12405060: startup date [Sun Aug 12 17:28:55 CST 2018]; root of context hierarchy
+2018-08-12 17:28:59.306 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addcookie],methods=[GET]}" onto public void org.wlgzs.website.controller.LoginController.addCookies(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 17:28:59.309 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.doLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 17:28:59.311 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ssocheck],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.checkCookies(javax.servlet.http.HttpServletRequest)
+2018-08-12 17:28:59.313 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/authcookies],methods=[GET]}" onto public org.wlgzs.website.util.Result.Result org.wlgzs.website.controller.SsoCheck.checkAuthCookies(java.lang.String,java.lang.String)
+2018-08-12 17:28:59.313 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/login],methods=[GET]}" onto public boolean org.wlgzs.website.controller.SsoCheck.checkLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 17:28:59.317 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-12 17:28:59.318 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-12 17:28:59.360 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 17:28:59.361 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 17:28:59.494 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-08-12 17:28:59.556 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-08-12 17:29:00.395 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-12 17:29:00.449 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-12 17:29:00.451 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-12 17:29:00.461 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-12 17:29:00.478 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-12 17:29:00.499 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-08-12 17:29:00.536 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-12 17:29:00.542 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Started OrgApplication in 6.996 seconds (JVM running for 9.388)
+2018-08-12 17:29:09.344 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-12 17:29:09.345 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-12 17:29:09.370 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-08-12 17:29:11.657 [http-nio-8080-exec-2] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 17:29:11.657 [http-nio-8080-exec-2] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 17:29:11.657 [http-nio-8080-exec-2] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 17:29:11.659 [http-nio-8080-exec-2] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://172.28.102.7:8080/addcookie ,请求方式为：GET
+2018-08-12 17:29:12.554 [http-nio-8080-exec-4] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 17:29:12.582 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: An invalid domain [.a.com] was specified for this cookie] with root cause
+java.lang.IllegalArgumentException: An invalid domain [.a.com] was specified for this cookie
+	at org.apache.tomcat.util.http.Rfc6265CookieProcessor.validateDomain(Rfc6265CookieProcessor.java:203)
+	at org.apache.tomcat.util.http.Rfc6265CookieProcessor.generateHeader(Rfc6265CookieProcessor.java:145)
+	at org.apache.catalina.connector.Response.generateCookieString(Response.java:1019)
+	at org.apache.catalina.connector.Response.addCookie(Response.java:967)
+	at org.apache.catalina.connector.ResponseFacade.addCookie(ResponseFacade.java:386)
+	at org.wlgzs.website.controller.LoginController.addCookies(LoginController.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-08-12 17:29:12.613 [http-nio-8080-exec-2] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://172.28.102.7:8080/addcookie 发送并接收成功
+2018-08-12 17:29:12.614 [http-nio-8080-exec-2] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：ResponseEntityProxy{[Content-Type: application/json;charset=UTF-8,Chunked: true]}
+2018-08-12 17:30:04.233 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Starting OrgApplication on DESKTOP-PB3M6A6 with PID 8764 (E:\workspace\wlgzs-tbUser\target\classes started by zjg in E:\workspace\wlgzs-tbUser)
+2018-08-12 17:30:04.239 [restartedMain] INFO  org.wlgzs.website.OrgApplication - The following profiles are active: dev
+2018-08-12 17:30:04.445 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@770e6f98: startup date [Sun Aug 12 17:30:04 CST 2018]; root of context hierarchy
+2018-08-12 17:30:05.844 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.wlgzs.website]' package. Please check your configuration.
+2018-08-12 17:30:07.422 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-08-12 17:30:07.441 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-12 17:30:07.453 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-08-12 17:30:07.454 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-12 17:30:07.460 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\environment\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\environment\Git\cmd;E:\environment\jdk\bin;E:\ideaIU-2017.3.5.win\plugins\maven\lib\maven3\bin;E:\environment\node\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;%mariadb%\bin;E:\environment\node\node_global;C:\Users\zjg\AppData\Local\Microsoft\WindowsApps;C:\Users\zjg\AppData\Roaming\npm;;.]
+2018-08-12 17:30:07.594 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-08-12 17:30:07.595 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3151 ms
+2018-08-12 17:30:07.736 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-08-12 17:30:07.744 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-12 17:30:07.745 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-12 17:30:07.745 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-12 17:30:07.745 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-12 17:30:07.950 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 17:30:08.233 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@770e6f98: startup date [Sun Aug 12 17:30:04 CST 2018]; root of context hierarchy
+2018-08-12 17:30:08.319 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.doLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 17:30:08.321 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ssocheck],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.checkCookies(javax.servlet.http.HttpServletRequest)
+2018-08-12 17:30:08.321 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addcookie],methods=[GET]}" onto public void org.wlgzs.website.controller.LoginController.addCookies(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 17:30:08.323 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/login],methods=[GET]}" onto public boolean org.wlgzs.website.controller.SsoCheck.checkLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 17:30:08.324 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/authcookies],methods=[GET]}" onto public org.wlgzs.website.util.Result.Result org.wlgzs.website.controller.SsoCheck.checkAuthCookies(java.lang.String,java.lang.String)
+2018-08-12 17:30:08.329 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-12 17:30:08.330 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-12 17:30:08.372 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 17:30:08.373 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 17:30:08.482 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-08-12 17:30:08.570 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-08-12 17:30:09.220 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-12 17:30:09.258 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-12 17:30:09.260 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-12 17:30:09.266 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-12 17:30:09.283 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-12 17:30:09.304 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-08-12 17:30:09.338 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-12 17:30:09.345 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Started OrgApplication in 6.596 seconds (JVM running for 8.432)
+2018-08-12 17:31:15.937 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-12 17:31:15.938 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-12 17:31:15.979 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+2018-08-12 17:31:18.315 [http-nio-8080-exec-5] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 17:31:18.315 [http-nio-8080-exec-5] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 17:31:18.315 [http-nio-8080-exec-5] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 17:31:18.317 [http-nio-8080-exec-5] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://172.28.102.7:8080/addcookie ,请求方式为：GET
+2018-08-12 17:31:18.868 [http-nio-8080-exec-7] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 17:31:18.905 [http-nio-8080-exec-5] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://172.28.102.7:8080/addcookie 发送并接收成功
+2018-08-12 17:31:18.905 [http-nio-8080-exec-5] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 17:31:27.907 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 17:31:27.908 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 17:31:27.908 [http-nio-8080-exec-1] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 17:31:27.908 [http-nio-8080-exec-1] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://172.28.102.7:8080/addcookie ,请求方式为：GET
+2018-08-12 17:31:27.927 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 17:31:27.933 [http-nio-8080-exec-1] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://172.28.102.7:8080/addcookie 发送并接收成功
+2018-08-12 17:31:27.934 [http-nio-8080-exec-1] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]
+2018-08-12 17:55:55.534 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Starting OrgApplication on DESKTOP-PB3M6A6 with PID 15964 (E:\workspace\wlgzs-tbUser\target\classes started by zjg in E:\workspace\wlgzs-tbUser)
+2018-08-12 17:55:55.535 [restartedMain] INFO  org.wlgzs.website.OrgApplication - The following profiles are active: dev
+2018-08-12 17:55:55.712 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@382c4472: startup date [Sun Aug 12 17:55:55 CST 2018]; root of context hierarchy
+2018-08-12 17:55:57.323 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[org.wlgzs.website]' package. Please check your configuration.
+2018-08-12 17:55:58.945 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2018-08-12 17:55:58.964 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-12 17:55:58.979 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-08-12 17:55:58.979 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-12 17:55:58.985 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\environment\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\environment\Git\cmd;E:\environment\jdk\bin;E:\ideaIU-2017.3.5.win\plugins\maven\lib\maven3\bin;E:\environment\node\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;%mariadb%\bin;E:\environment\node\node_global;C:\Users\zjg\AppData\Local\Microsoft\WindowsApps;C:\Users\zjg\AppData\Roaming\npm;;.]
+2018-08-12 17:55:59.139 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-08-12 17:55:59.139 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3427 ms
+2018-08-12 17:55:59.280 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-08-12 17:55:59.288 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-12 17:55:59.288 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-12 17:55:59.289 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-12 17:55:59.289 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-12 17:55:59.478 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 17:55:59.829 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@382c4472: startup date [Sun Aug 12 17:55:55 CST 2018]; root of context hierarchy
+2018-08-12 17:55:59.917 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ssocheck],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.checkCookies(javax.servlet.http.HttpServletRequest)
+2018-08-12 17:55:59.919 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addcookie],methods=[GET]}" onto public void org.wlgzs.website.controller.LoginController.addCookies(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 17:55:59.919 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView org.wlgzs.website.controller.LoginController.doLogin(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 17:55:59.921 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/authcookies],methods=[GET]}" onto public org.wlgzs.website.util.Result.Result org.wlgzs.website.controller.SsoCheck.checkAuthCookies(java.lang.String,java.lang.String)
+2018-08-12 17:55:59.921 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/tbUser/login],methods=[GET]}" onto public boolean org.wlgzs.website.controller.SsoCheck.checkLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-08-12 17:55:59.924 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-12 17:55:59.925 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-12 17:55:59.956 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 17:55:59.957 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-12 17:56:00.081 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-08-12 17:56:00.225 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2018-08-12 17:56:00.957 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-12 17:56:01.006 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-12 17:56:01.009 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-12 17:56:01.016 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-12 17:56:01.034 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-12 17:56:01.050 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-08-12 17:56:01.092 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-12 17:56:01.098 [restartedMain] INFO  org.wlgzs.website.OrgApplication - Started OrgApplication in 7.1 seconds (JVM running for 10.782)
+2018-08-12 17:56:01.443 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-12 17:56:01.443 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-12 17:56:01.504 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 61 ms
+2018-08-12 17:56:08.336 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.LoginController - 开始登录
+2018-08-12 17:56:08.336 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.LoginController - start
+2018-08-12 17:56:08.336 [http-nio-8080-exec-3] INFO  org.wlgzs.website.controller.SsoCheck - 统一登录校验
+2018-08-12 17:56:08.338 [http-nio-8080-exec-3] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 发送请求,请求链接为：Http://172.28.102.7:8080/addcookie ,请求方式为：GET
+2018-08-12 17:56:09.107 [http-nio-8080-exec-5] INFO  org.wlgzs.website.controller.LoginController - 向本域名添加cookie
+2018-08-12 17:56:09.138 [http-nio-8080-exec-3] WARN  o.a.http.client.protocol.ResponseProcessCookies - Cookie rejected [lovewlgzs="ok", version:0, domain:a.com, path:/, expiry:Sun Aug 12 18:56:09 CST 2018] Illegal 'domain' attribute "a.com". Domain of origin: "172.28.102.7"
+2018-08-12 17:56:09.139 [http-nio-8080-exec-3] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求：Http://172.28.102.7:8080/addcookie 发送并接收成功
+2018-08-12 17:56:09.139 [http-nio-8080-exec-3] INFO  org.wlgzs.website.util.HttpUtil.HttpUtil - 请求结果：[Content-Length: 0,Chunked: false]

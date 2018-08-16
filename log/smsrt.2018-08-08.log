@@ -1,0 +1,24 @@
+2018-08-08 09:20:10.602 [restartedMain] INFO  org.wlgzs.website.WebsiteApplication - Starting WebsiteApplication on DESKTOP-PB3M6A6 with PID 12116 (E:\workspace\wlgzs-tbUser\api\target\classes started by zjg in E:\workspace\wlgzs-tbUser)
+2018-08-08 09:20:10.603 [restartedMain] INFO  org.wlgzs.website.WebsiteApplication - The following profiles are active: dev
+2018-08-08 09:20:10.662 [restartedMain] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@54e3c704: startup date [Wed Aug 08 09:20:10 CST 2018]; root of context hierarchy
+2018-08-08 09:20:12.137 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$caa4b176] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-08 09:20:12.707 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-08 09:20:12.736 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-08 09:20:12.746 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483547
+2018-08-08 09:20:12.767 [restartedMain] INFO  org.wlgzs.website.WebsiteApplication - Started WebsiteApplication in 2.984 seconds (JVM running for 9.214)
+2018-08-08 09:20:12.782 [Thread-14] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@54e3c704: startup date [Wed Aug 08 09:20:10 CST 2018]; root of context hierarchy
+2018-08-08 09:20:12.785 [Thread-14] INFO  o.s.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483547
+2018-08-08 09:20:12.785 [Thread-14] INFO  o.s.context.support.DefaultLifecycleProcessor - Stopping beans in phase 0
+2018-08-08 09:20:12.787 [Thread-14] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-08-08 09:21:45.176 [restartedMain] INFO  org.wlgzs.website.WebsiteApplication - Starting WebsiteApplication on DESKTOP-PB3M6A6 with PID 2288 (E:\workspace\wlgzs-tbUser\api\target\classes started by zjg in E:\workspace\wlgzs-tbUser)
+2018-08-08 09:21:45.179 [restartedMain] INFO  org.wlgzs.website.WebsiteApplication - The following profiles are active: dev
+2018-08-08 09:21:45.359 [restartedMain] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@24053953: startup date [Wed Aug 08 09:21:45 CST 2018]; root of context hierarchy
+2018-08-08 09:21:46.877 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$ca91de6b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-08 09:21:47.832 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-08-08 09:21:47.868 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-08-08 09:21:47.878 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483547
+2018-08-08 09:21:47.896 [restartedMain] INFO  org.wlgzs.website.WebsiteApplication - Started WebsiteApplication in 4.318 seconds (JVM running for 7.59)
+2018-08-08 09:21:47.919 [Thread-14] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@24053953: startup date [Wed Aug 08 09:21:45 CST 2018]; root of context hierarchy
+2018-08-08 09:21:47.922 [Thread-14] INFO  o.s.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483547
+2018-08-08 09:21:47.922 [Thread-14] INFO  o.s.context.support.DefaultLifecycleProcessor - Stopping beans in phase 0
+2018-08-08 09:21:47.925 [Thread-14] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
