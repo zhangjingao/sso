@@ -23,7 +23,7 @@ public class OrgApplicationTests {
 	public void insert(){
 		log.info("start test");
 		TbUser tbUser = new TbUser(
-			"zjg","张金高","1234","1234","男","18738357910","大二","计科163",1,"JavaWeb","","","",""
+			"zjg","zhangjingao","1234","1234","男","187xxxxxxxx","大二","班级",1,"JavaWeb","","","",""
 		);
 		Result result = userController.insertUser(tbUser);
 		log.info(result.toString());
